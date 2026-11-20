@@ -1,9 +1,10 @@
 from django.http import HttpResponse
 from django.views.generic import TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from kitchen.models import Cook, DishType, Dish
 
 
-class IndexView(TemplateView):
+class IndexView(LoginRequiredMixin, TemplateView):
     template_name = "kitchen/index.html"
 
     def get_context_data(self, **kwargs):
