@@ -3,5 +3,11 @@
     <li>
       <a href={% url "kitchen:index" %}>Home</a>
     </li>
+    <li>
+      <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+      </form>
+    </li>
   </ul>
 </nav>
