@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@tabler/core@1.7.5/dist/css/tabler.min.css">
+  <link rel="stylesheet" href="{% static 'kitchen/css/style.css' %}">
   <meta charset="UTF-8">
   <title>{% block title %}Kitchen Service{% endblock %}</title>
 </head>
@@ -11,6 +13,9 @@
   <div class="page">
     <aside class="navbar navbar-vertical navbar-expand-lg">
       <div class="container-fluid">
+        <div class="navbar-brand">
+          Kitchen Service
+        </div>
         {% include "includes/sidebar.html" %}
       </div>
     </aside>
