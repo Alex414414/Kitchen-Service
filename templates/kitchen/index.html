@@ -1,11 +1,43 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Kitchen Service</h1>
+    <h1>Dashboard</h1>
+<h2>Restaurant statistics</h2>
 
-    <h2>Restaurant statistics</h2>
+<div class="row row-cards">
+    <div class="col-sm-6 col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="subheader">Cooks</div>
+                <div class="h1 mb-0">{{ num_cooks }}</div>
+            </div>
+        </div>
+    </div>
 
-    <p>Cooks: {{ num_cooks }}</p>
-    <p>Dish types: {{ num_dish_types }}</p>
-    <p>Dishes: {{ num_dishes }}</p>
-    <p>Visits: {{ num_visits }}</p>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="subheader">Dish types</div>
+                <div class="h1 mb-0">{{ num_dish_types }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="subheader">Dishes</div>
+                <div class="h1 mb-0">{{ num_dishes }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="subheader">Visits</div>
+                <div class="h1 mb-0">{{ num_visits }}</div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
