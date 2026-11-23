@@ -17,3 +17,14 @@
     padding-bottom: 12px;
     margin-bottom: 12px;
 }
+.btn-primary {
+    background-color: #f5c542;
+    border-color: #f5c542;
+    color: #292929;
+}
+
+.btn-primary:hover {
+    background-color: #e5b632;
+    border-color: #e5b632;
+    color: #292929;
+}
